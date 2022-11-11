@@ -1,0 +1,28 @@
+
+.main-container {
+    display: flex;
+}
+
+
+.new-entry-container {
+    width: 200px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+#form {
+    display: grid;
+}
+
+.card-container {
+    background-color: azure;
+    width: 400px;
+    height: 400px;
+}
+
+.card {
+    background-color: rgb(220, 205, 235);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
