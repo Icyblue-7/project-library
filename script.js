@@ -52,10 +52,19 @@ function newEntry(item) {
         const newPageNumber = document.createElement('p');
         newPageNumber.innerHTML = item.page;
         newEntry.appendChild(newPageNumber);
+
         
-        const newRead = document.createElement('p');
+        const newRead = document.createElement('button');
+        newRead.classList.add('read-button')
+        newRead.addEventListener('click', () => {
+            item.read = !item.read
+            render()
+        })
         if (item.read) newRead.innerHTML = 'yup'
-        else newRead.innerHTML = 'not yeet!'
+        else {
+            newRead.innerHTML = 'not yeet!'
+            newRead.classList.add('not-read')
+        }
         newEntry.appendChild(newRead);
 
         const removeBTN = document.createElement('button')

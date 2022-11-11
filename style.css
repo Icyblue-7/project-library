@@ -26,3 +26,11 @@
     gap: 10px;
     padding: 10px;
 }
+
+.read-button {
+    background-color: rgb(126, 165, 126);
+}
+
+.not-read {
+    background-color: rgb(207, 157, 157);
+}
